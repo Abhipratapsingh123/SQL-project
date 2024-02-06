@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.whole_container{
+    /* border: 2px solid red; */
+    height: 100vh;
+    
+}
+
+.left_most_container{
+    height: 36rem;
+    width: 3rem;
+    border:2px solid black;
+    padding: 0.5rem;
+    
+}
+
+.logo{
+
+}
