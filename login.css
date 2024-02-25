@@ -26,7 +26,7 @@ body {
     transform: translateY(-50%);
     padding: 20px 40px;
     /* background-color: #ffffffcc; */
-    background: linear-gradient(to top left, #ffffffff,#ffffff33);
+    background: linear-gradient(to top left, #ffffffff, #ffffff33);
     /* backdrop-filter: blur(8px); */
     border-radius: 8px;
     /* box-shadow: 2px 2px 5px #2773a5; */
@@ -87,4 +87,11 @@ body {
     background-color: #2773a5;
 }
 
-
+.login-footer p a {
+    color: #3498db;
+    text-decoration: none;
+}
+.login-footer p {
+    color: #555;
+    text-align: center;
+}
