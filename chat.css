@@ -5,36 +5,29 @@
     font-family: system-ui;
 }
 
-body {
-    height: 100vh;
-    /* Ensures the body covers the entire viewport height */
-    display: flex;
-    justify-content: center;
-    /* Centers the container horizontally */
-    align-items: center;
-    /* Centers the container vertically */
-    background: linear-gradient(to bottom, #ada7a7, #f0f0f0);
-}
-
 .container {
     display: flex;
+    width: 100vw;
+    height: 100vh;
+    /* border: 2px solid red; */
 }
 
 .left_container,
 .right_container {
-    /* flex: 1; Each container takes up equal space */
     border: 1px solid #665d5d;
+    background-color: #b6b6b6;
     /* padding: 20px; */
-    height: 35rem;
-    /* overflow: auto; */
+    /* height: 35rem; */
+    height: 100vh;
+    /* background: linear-gradient(to bottom, #8d8a8a, #aca8a8); */
 }
 
 .left_container {
     width: 20rem;
-    border-top: 2px solid #665d5d;
+    /* border-top: 2px solid #665d5d;
     border-left: 2px solid #665d5d;
-    border-bottom: 2px solid #665d5d;
-    border-radius: 5px 0 0 5px;
+    border-bottom: 2px solid #665d5d; */
+    /* border-radius: 5px 0 0 5px; */
     /* overflow: auto; */
 }
 
@@ -97,6 +90,28 @@ h2 {
     /* Color of the handle */
 }
 
+#setting {
+    align-self: flex-end;
+    margin-left: 10rem;
+
+}
+
+#setting:hover {
+    cursor: pointer;
+    transform: rotate(30deg);
+}
+
+.header1 {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+
+}
+
+
+
+
+
 
 
 
@@ -106,15 +121,12 @@ h2 {
 /* styling things of right container */
 
 .right_container {
-    width: 50rem;
-    border-top: 2px solid #665d5d;
-    border-right: 2px solid #665d5d;
-    border-bottom: 2px solid #665d5d;
-    border-top-right-radius: 5px;
+    width: 100vw;
+    /* background-color: #b6b6b6; */
 }
 
 .message_container {
-    height: 25rem;
+    height: 28rem;
     border-top: 1px solid lightgray;
     border-bottom: 1px solid lightgray;
     margin: 1rem auto;
@@ -122,6 +134,8 @@ h2 {
     display: flex;
     flex-direction: column;
     overflow: auto;
+    background: linear-gradient(to bottom, #9e9b9b, #696868);
+
 }
 
 .header {
@@ -138,15 +152,16 @@ h2 {
 
 }
 
-#chat_icon:hover {}
-
 .message_container div {
     background-color: rgb(194, 192, 192);
     padding: 0.4rem 1rem;
+    max-width: 70%;
     width: fit-content;
     border-radius: 5px;
     margin-bottom: 1rem;
     margin-left: 1rem;
+    /* text-decoration: none;
+    text-wrap: wrap; */
 }
 
 .message_container div span {
@@ -187,8 +202,8 @@ h2 {
     padding: 0.4rem 1.3rem;
     border: 1px solid black;
     border-radius: 10px;
-    width: 40rem;
-    margin-left: 10px;
+    width: 50rem;
+    margin-left: 20px;
 
 }
 
@@ -203,7 +218,7 @@ sendMessageButton {
 }
 
 #sendMessageButton {
-    margin-right: 10px;
+    margin-right: 70px;
 
 }
 
