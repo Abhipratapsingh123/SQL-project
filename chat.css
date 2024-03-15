@@ -3,41 +3,43 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: system-ui;
-}
-
-.container {
+  }
+  
+  .container {
     display: flex;
     width: 100vw;
     height: 100vh;
     /* border: 2px solid red; */
-}
-
-.left_container,
-.right_container {
+  }
+  
+  .left_container,
+  .right_container {
     border: 1px solid #665d5d;
-    background-color: #b6b6b6;
+    /* background-color: #aca1a1;  */
     /* padding: 20px; */
     /* height: 35rem; */
     height: 100vh;
     /* background: linear-gradient(to bottom, #8d8a8a, #aca8a8); */
-}
-
-.left_container {
+  }
+  
+  .left_container {
     width: 20rem;
+    background-color: rgba(44,44,44,255);
     /* border-top: 2px solid #665d5d;
     border-left: 2px solid #665d5d;
     border-bottom: 2px solid #665d5d; */
     /* border-radius: 5px 0 0 5px; */
     /* overflow: auto; */
-}
-
-h2 {
+  }
+  
+  h2 {
     text-align: center;
     margin-top: 8px;
     font-weight: bold;
-}
-
-.sender_container {
+    color: white;
+  }
+  
+  .sender_container {
     height: 30rem;
     width: 18.5rem;
     /* border: 2px solid red; */
@@ -47,86 +49,88 @@ h2 {
     display: flex;
     flex-direction: column;
     overflow: auto;
-}
-
-.sender_container section {
+  }
+  
+  .sender_container section {
     margin: 1rem 1rem 0.3rem 0rem;
     padding: 1rem;
     border-radius: 10px;
     /* border: 2px solid rgb(65, 59, 65); */
     cursor: pointer;
     font-size: 20px;
-}
-
-.sender_container section:hover {
-    background-color: #ebd1d1;
-    color: #a04343;
-}
-
-/* decorating scroll bar of left container */
-.sender_container::-webkit-scrollbar {
+    color: white;
+  }
+  
+  .sender_container section:hover {
+    background-color:rgba(69,69,69,255);
+    
+  }
+  
+  /* decorating scroll bar of left container */
+  .sender_container::-webkit-scrollbar {
     width: 4px;
     /* Width of the scrollbar */
     height: 8px;
-}
-
-/* Track (the area behind the scrollbar) */
-.sender_container::-webkit-scrollbar-track {
+  }
+  
+  /* Track (the area behind the scrollbar) */
+  .sender_container::-webkit-scrollbar-track {
     background: transparent;
     /* Background color of the track */
-}
-
-/* Handle (the draggable part of the scrollbar) */
-.sender_container::-webkit-scrollbar-thumb {
+  }
+  
+  /* Handle (the draggable part of the scrollbar) */
+  .sender_container::-webkit-scrollbar-thumb {
     background: transparent;
     border-radius: 10px;
     /* Color of the handle */
     height: 0.1px;
-}
-
-/* Handle (the draggable part of the scrollbar) */
-.sender_container::-webkit-scrollbar-thumb:hover {
-    background: #a04343;
+  }
+  
+  /* Handle (the draggable part of the scrollbar) */
+  .sender_container::-webkit-scrollbar-thumb:hover {
+    background: white;
     /* Color of the handle */
-}
-
-#setting {
+  }
+  
+  #setting {
     align-self: flex-end;
     margin-left: 10rem;
-
-}
-
-#setting:hover {
+    filter: invert(100%);
+  
+  }
+  
+  #setting:hover {
     cursor: pointer;
     transform: rotate(30deg);
-}
-
-.header1 {
+  }
+  
+  .header1 {
     display: flex;
     /* align-items: center; */
     justify-content: center;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-/* styling things of right container */
-
-.right_container {
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* styling things of right container */
+  
+  .right_container {
     width: 100vw;
-    /* background-color: #b6b6b6; */
-}
-
-.message_container {
-    height: 28rem;
+    background-color: rgba(44,44,44,255);
+  }
+  
+  .message_container {
+    height: 29rem;
     border-top: 1px solid lightgray;
     border-bottom: 1px solid lightgray;
     margin: 1rem auto;
@@ -134,117 +138,123 @@ h2 {
     display: flex;
     flex-direction: column;
     overflow: auto;
-    background: linear-gradient(to bottom, #9e9b9b, #696868);
-
-}
-
-.header {
+    /* background-color: #383838; */
+    background: linear-gradient(to bottom right,rgba(58,36,66,255),rgba(90,31,36,255));
+  }
+  
+  .header {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-/* styling icon */
-#chat_icon {
+    color: white;
+  }
+  
+  /* styling icon */
+  #chat_icon {
     height: 40px;
     margin-left: 20px;
     transform: translateY(20%);
-
-}
-
-.message_container div {
-    background-color: rgb(194, 192, 192);
+  
+  }
+  
+  .message_container div {
+    background-color: rgba(54,54,54,255);
+    /* color: white; */
     padding: 0.4rem 1rem;
     max-width: 70%;
     width: fit-content;
     border-radius: 5px;
     margin-bottom: 1rem;
     margin-left: 1rem;
+    color: white;
     /* text-decoration: none;
     text-wrap: wrap; */
-}
-
-.message_container div span {
+  }
+  
+  .message_container div span {
     display: block;
     font-weight: bold;
-}
-
-.message_container .sender {
-    background-color: rgb(89, 225, 89);
+  }
+  
+  .message_container .sender {
+    background-color:#024d3f;
     align-self: flex-end;
     margin-right: 23px;
-}
-
-
-.input_msg {
+    
+  }
+  
+  
+  .input_msg {
     display: flex;
     justify-content: space-between;
     margin-top: 2rem;
-}
-
-.input_msg button {
+  }
+  
+  .input_msg button {
     width: 8rem;
-    background-color: #767699;
+    background-color: #3e3ee9;
     color: white;
     border: none;
     cursor: pointer;
-    padding: 0.5rem 1rem;
+    /* padding: 1rem; */
     font-size: 1.3rem;
     border-radius: 5px;
-}
-
-.input_msg button:hover {
+  }
+  
+  .input_msg button:hover {
     background-color: #333342;
-}
-
-#chatMessage {
+  }
+  
+  #chatMessage {
     font-size: 1.2rem;
     padding: 0.4rem 1.3rem;
     border: 1px solid black;
     border-radius: 10px;
     width: 50rem;
     margin-left: 20px;
-
-}
-
-#chatMessage:hover {
+    height: 2rem;
+    /* background-color: #302e2e; */
+  
+  }
+  
+  #chatMessage:hover {
     background-color: rgb(241, 241, 241);
-
-}
-
-#chatMessage,
-sendMessageButton {
+  
+  }
+  
+  #chatMessage,
+  sendMessageButton {
     padding: 0.5rem;
-}
-
-#sendMessageButton {
+  }
+  
+  #sendMessageButton {
     margin-right: 70px;
-
-}
-
-/* decorating scroll bar of right container */
-.message_container::-webkit-scrollbar {
+  
+  }
+  
+  /* decorating scroll bar of right container */
+  .message_container::-webkit-scrollbar {
     width: 5px;
     /* Width of the scrollbar */
     height: 0.1px;
-}
-
-/* Track (the area behind the scrollbar) */
-.message_container::-webkit-scrollbar-track {
+  }
+  
+  /* Track (the area behind the scrollbar) */
+  .message_container::-webkit-scrollbar-track {
     background: transparent;
     /* Background color of the track */
-}
-
-/* Handle (the draggable part of the scrollbar) */
-.message_container::-webkit-scrollbar-thumb {
+  }
+  
+  /* Handle (the draggable part of the scrollbar) */
+  .message_container::-webkit-scrollbar-thumb {
     background: transparent;
     /* Color of the handle */
     height: 10px;
-}
-
-/* Handle (the draggable part of the scrollbar) */
-.message_container::-webkit-scrollbar-thumb:hover {
-    background: #a04343;
+  }
+  
+  /* Handle (the draggable part of the scrollbar) */
+  .message_container::-webkit-scrollbar-thumb:hover {
+    background: white;
     border-radius: 15px;
     /* Color of the handle */
-}
+  }
